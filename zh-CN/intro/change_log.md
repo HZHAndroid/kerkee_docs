@@ -11,3 +11,4 @@ name: 更新日志
 	2. 添加JSLog开关，可选择js log输出到浏览器或IDE控制台
 	3. 优化性能
 	4. 修复若干bug
+	5. 优化cookie
