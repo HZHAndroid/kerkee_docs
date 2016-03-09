@@ -11,7 +11,7 @@ kerkee目前支持**包集成**和**源码集成**的方式，把kerkee集成到
   
   最新版本： [ ![Download](https://api.bintray.com/packages/zihong/maven/kerkee/images/download.svg) ](https://bintray.com/zihong/maven/kerkee/_latestVersion)
   
-  快速集成指南：[Android客户端包集成](install_from_packages)
+  快速集成指南：[Android客户端包集成](install_from_packages.md)
   
 - **iOS平台**
   
@@ -19,7 +19,7 @@ kerkee目前支持**包集成**和**源码集成**的方式，把kerkee集成到
   
 ## 源码集成
 
-Android和iOS皆可以[源码方式集成](install_from_source)
+Android和iOS皆可以[源码方式集成](install_from_source.md)
 
 **Android源码：**
 

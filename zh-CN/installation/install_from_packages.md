@@ -15,7 +15,7 @@ kerkee从包集成，非常简单。
 好了，到现在为止，kerkee已集成完成，接下来开始使用它。
 我们以官网上的例子工程来讲解如何快速上手。
 
-1. 先下载源码
+1. 例子在源码的仓库中，所以先下载源码
 `git clone https://github.com/kercer/kerkee_android.git`
 
 2. 使用源码导入到IDE（也可以只导入`kerkee_example`文件夹到IDE中）
