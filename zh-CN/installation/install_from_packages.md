@@ -2,7 +2,7 @@
 name: 包集成（推荐）
 ---
 
-# Android客户端集成
+# Android客户端包集成
 
 前提：有Android环境，本项目现在使用的是gradle构建，IDE建议Android Studio，当然你也可以使用idea或eclipse，甚至其他。
 
@@ -42,6 +42,7 @@ kerkee从包集成，非常简单。
 > mWebView.setWebViewClient(**KCWebViewClient**)
 
 - **注册对应的接口类或模块**
+
 可以参考例子中的KCRegistMgr类的实现
 
 ```
