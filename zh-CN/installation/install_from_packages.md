@@ -2,7 +2,7 @@
 name: 包集成（推荐）
 ---
 
-#Android客户端集成
+# Android客户端集成
 
 前提：有Android环境，本项目现在使用的是gradle构建，IDE建议Android Studio，当然你也可以使用idea或eclipse，甚至其他。
 
@@ -11,7 +11,7 @@ kerkee从包集成，非常简单。
 在你的Android工程的build.gradle中找到 dependencies 块，添加
 `compile 'com.kercer:kerkee:1.3.7'`
 
-###快速上手
+### 快速上手
 好了，到现在为止，kerkee已集成完成，接下来开始使用它。
 我们以官网上的例子工程来讲解如何快速上手。
 
@@ -29,7 +29,7 @@ kerkee从包集成，非常简单。
 	在 ***setting.gradle*** 中把注掉`include ':kerkee'`
 4. 一切完成，直接把example跑起来吧
 
-###代码使用
+### 代码使用
 
 - **创建Browser**
 
