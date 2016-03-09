@@ -86,4 +86,30 @@ public static void objExampleStaticFunction(final KCWebView aWebView, KCArgList 
 
 ```
 
+- **调用**
+
+```
+    @Override
+    protected void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_main);
+
+        //create browser that use KCWebview
+        KCDefaultBrowser browser = new KCDefaultBrowser(this);
+        View view = browser.getView();
+        setContentView(view);
+
+        //regist classes to JSBridge，the relationship between binding js objects and native classes
+        //and you can use default browser'b registJSBridgeClient function
+        KCRegistMgr.registClass();
+        //you can registObject here;
+//        KCJSBridge.registObject(new KCTest());
+
+        browser.loadTestPage();
+//        browser.loadUrl("http://www.baidu.com");
+
+    }
+```
+
 至此，基本使用已完成！！！恭喜你上手了kerkee，你学这么快，你妈知道吗！！！
