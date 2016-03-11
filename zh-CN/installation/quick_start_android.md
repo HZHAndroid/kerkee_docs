@@ -1,6 +1,6 @@
 
 ---
-name: 快速上手（android）
+name: 快速上手（Android）
 ---
 
 # 快速上手

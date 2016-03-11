@@ -1,12 +1,12 @@
 ---
-name: 包集成（推荐）
+name: 包集成
 ---
 
 # Android客户端包集成
 
 ***前提：***有Android环境，本项目现在使用的是gradle构建，IDE建议Android Studio，当然你也可以使用idea或eclipse，甚至其他。
 
-kerkee从包集成，非常简单。
+kerkee从包集成，非常简单，建议使用此方式，干净简洁。
 
 在你的Android工程的build.gradle中找到 dependencies 块，添加
 `compile 'com.kercer:kerkee:1.3.7'`即可。
