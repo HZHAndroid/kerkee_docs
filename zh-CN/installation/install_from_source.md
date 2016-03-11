@@ -10,7 +10,7 @@ kerkee的native部分目前支持Android和iOS平台，两个平台的架构设�
 
 - 1、 先拉取源码 
 
-		`git clone https://github.com/kercer/kerkee_android.git`
+		git clone https://github.com/kercer/kerkee_android.git
 
 	源码的根目录包含`kerkee`和`kerkee_example`目录
 
@@ -25,5 +25,12 @@ kerkee的native部分目前支持Android和iOS平台，两个平台的架构设�
 
 ## iOS
 
+- 1、拉取源码
 
+		git clone https://github.com/kercer/kerkee_ios.git
 
+- 2、拷贝根目录下的kerkee目录到你的工程目录（这步也可以忽略）
+- 3、打开你的工程，把kerkee.xcodeproj文件拉到你的工程里进行lib依赖
+- 4、找到你工程的TARGETS，在`Embedded Binaried`添加kerkee.framework
+
+恭喜你，源码集成完成！
