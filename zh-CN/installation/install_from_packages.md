@@ -9,14 +9,14 @@ name: 包集成
 kerkee从包集成，非常简单，建议使用此方式，干净简洁。
 
 在你的Android工程的build.gradle中找到 dependencies 块，添加
-`compile 'com.kercer:kerkee:1.3.7'`即可。
+`compile 'com.kercer:kerkee:1.3.8'`即可。
 
 如下所示
 
 ~~~
 dependencies {
     compile fileTree(include: '*.jar', dir: 'libs')
-    compile 'com.kercer:kerkee:1.3.7'
+    compile 'com.kercer:kerkee:1.3.8'
 }
 ~~~
 至此，基本集成已完成！！！恭喜你已经集成了kerkee，接下来就代码走起！！！
