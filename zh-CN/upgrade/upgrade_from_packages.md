@@ -10,14 +10,14 @@ kerkee从包管理升级，非常简单，建议使用此方式，干净简洁�
 
 在你的Android工程的build.gradle中找到 dependencies 块，修改版本号（`1.3.8`）至最新，最新版： [ ![Download](https://api.bintray.com/packages/zihong/maven/kerkee/images/download.svg) ](https://bintray.com/zihong/maven/kerkee/_latestVersion)
 
-`compile 'com.kercer:kerkee:1.3.8'`即可。
+`compile 'com.kercer:kerkee:1.3.9'`即可。
 
 如下所示
 
 ~~~
 dependencies {
     compile fileTree(include: '*.jar', dir: 'libs')
-    compile 'com.kercer:kerkee:1.3.8'
+    compile 'com.kercer:kerkee:1.3.9'
 }
 ~~~
 至此，kerkee升级完毕。
@@ -56,7 +56,7 @@ pod init
 在你工程的***Podfile***文件添加
 
 ~~~
-pod ‘kerkee’, ’~> 1.0.0’
+pod ‘kerkee’, ’~> 1.0.1’
 ~~~
 
 或者你想直接使用最新版可把版本号去掉，使用以下这句
@@ -78,7 +78,7 @@ target 'TestKerkeePod' do
 #or this way，If it is a team work,please do not use this way.
 #because it use last version of kerkee,it is a bad way
 #pod ‘kerkee’
-pod ‘kerkee’, ’~> 1.0.0’
+pod ‘kerkee’, ’~> 1.0.1’
 
 end
 

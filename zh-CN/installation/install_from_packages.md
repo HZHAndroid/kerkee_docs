@@ -9,14 +9,14 @@ name: 包集成
 kerkee从包集成，非常简单，建议使用此方式，干净简洁。
 
 在你的Android工程的build.gradle中找到 dependencies 块，添加
-`compile 'com.kercer:kerkee:1.3.8'`即可。
+`compile 'com.kercer:kerkee:1.3.9'`即可。
 
 如下所示
 
 ~~~
 dependencies {
     compile fileTree(include: '*.jar', dir: 'libs')
-    compile 'com.kercer:kerkee:1.3.8'
+    compile 'com.kercer:kerkee:1.3.9'
 }
 ~~~
 至此，基本集成已完成！！！恭喜你已经集成了kerkee，接下来就代码走起！！！
@@ -26,7 +26,7 @@ dependencies {
 
 iOS的kerkee使用CocoaPods进行管理，在集成的时候很方便。
 ***
-**简述：** 如果你已知道CocoaPods如何使用，你只需在Podfile中添加`pod ‘kerkee’, ’~> 1.0.0’` 或者 `pod ‘kerkee’`，然后即可走起，此时你可不用看以下的详细说明了
+**简述：** 如果你已知道CocoaPods如何使用，你只需在Podfile中添加`pod ‘kerkee’, ’~> 1.0.1’` 或者 `pod ‘kerkee’`，然后即可走起，此时你可不用看以下的详细说明了
 
 ***
 
@@ -54,7 +54,7 @@ pod init
 在你工程的***Podfile***文件添加
 
 ~~~
-pod ‘kerkee’, ’~> 1.0.0’
+pod ‘kerkee’, ’~> 1.0.1’
 ~~~
 
 或者你想直接使用最新版可把版本号去掉，使用以下这句
@@ -76,7 +76,7 @@ target 'TestKerkeePod' do
 #or this way，If it is a team work,please do not use this way.
 #because it use last version of kerkee,it is a bad way
 #pod ‘kerkee’
-pod ‘kerkee’, ’~> 1.0.0’
+pod ‘kerkee’, ’~> 1.0.1’
 
 end
 
