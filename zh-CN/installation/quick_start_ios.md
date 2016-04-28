@@ -22,7 +22,7 @@ name: 快速上手（iOS）
 
 在使用之前，你必须先注册对应的接口类或模块，使得js对象能与Native类进行映射，全局只需要注册一次就够了
 
-~~~
+```
     //have rewritten jsBridgeClient in kerkee
     //you can use this way, first you can import "KCJSDefine.h"
     //[KCJSBridge registClass:[KCApiOverrideJSBridgeClient class] jsObjName:kJS_jsBridgeClient];
@@ -32,13 +32,13 @@ name: 快速上手（iOS）
     //you can regist class which inherit from KCJSObject,js call static function
     //[KCJSBridge registClass:[KCApiJSObjExample class] jsObjName:kJS_JSObjExampleModule];
     [KCJSBridge registObject:[[KCApiJSObjExample alloc]init] ];
-~~~
+```
 
 - **实现JS对应的Native接口**
 
 *KCApiOverrideJSBridgeClient*
 
-~~~
+```
 #import "KCApiOverrideJSBridgeClient.h"
 #import "KCBaseDefine.h"
 #import "KCJSBridge.h"
@@ -65,12 +65,12 @@ name: 快速上手（iOS）
     
 }
 @end
-~~~
+```
 
 
 *KCApiTest*
 
-~~~
+```
 #import "KCApiTest.h"
 #import "KCBaseDefine.h"
 #import "KCJSBridge.h"
@@ -94,11 +94,11 @@ name: 快速上手（iOS）
 
 @end
 
-~~~
+```
 
 *KCApiJSObjExample*
 
-~~~
+```
 #import "KCApiJSObjExample.h"
 #import "KCJSObjDefine.h"
 
@@ -119,33 +119,33 @@ name: 快速上手（iOS）
     KCLog(@"objExampleStaticFunction");
 }
 @end
-~~~
+```
 
 - **创建KCWebView**
 
 在ViewController中，添加成员变量
 
-~~~
+```
 @interface ViewController ()
 {
     KCWebView* m_webView;
     KCJSBridge* m_jsBridge;
 }
-~~~
+```
 
 初始化KCWebView和KCJSBridge对象
 
-~~~
+```
     m_webView = [[KCWebView alloc] initWithFrame:self.view.bounds];
     //add webview in your view
     [self.view addSubview:m_webView];
     //you can implement webview delegate
     m_jsBridge = [[KCJSBridge alloc] initWithWebView:m_webView delegate:self];
-~~~
+```
 
 - **实现KCWebView代理**
 
-~~~
+```
 #pragma mark --
 #pragma mark KCWebViewProgressDelegate
 
@@ -173,6 +173,6 @@ name: 快速上手（iOS）
 {
     return YES;
 }
-~~~
+```
 
 至此，简单Demo即可运行起来

@@ -13,12 +13,12 @@ kerkee从包集成，非常简单，建议使用此方式，干净简洁。
 
 如下所示
 
-~~~
+```
 dependencies {
     compile fileTree(include: '*.jar', dir: 'libs')
     compile 'com.kercer:kerkee:1.3.9'
 }
-~~~
+```
 至此，基本集成已完成！！！恭喜你已经集成了kerkee，接下来就代码走起！！！
 
 # iOS客户端包集成
@@ -34,38 +34,38 @@ CocoaPods的安装及深入使用：[请点击这里](http://blog.linzihong.com/
 
 ***前提：***cocopods安装，安装非常简单，本来想略去这一部分的，但还是贴一下命令吧，如果不明白网络上搜索一搜一大把。
 
-~~~
+```
 sudo gem install cocoapods
 pod setup
-~~~
+```
 
 **1、 创建Podfile**
 
 使用也比较简单，cd到你的工程的根目录$projectPath
 
-~~~
+```
 cd $projectPath
 pod init
-~~~
+```
 这个命令就会再工程根目录下面生成一个Podfile文件,podfile用文本编辑就行了
 
 **2、 配置Podfile**
 
 在你工程的***Podfile***文件添加
 
-~~~
+```
 pod ‘kerkee’, ’~> 1.0.1’
-~~~
+```
 
 或者你想直接使用最新版可把版本号去掉，使用以下这句
 
-~~~
+```
 pod ‘kerkee’
-~~~
+```
 
 我帖出个podfile文件配置的例子
 
-~~~
+```
 # Uncomment this line to define a global platform for your project
 # platform :ios, '8.0'
 # Uncomment this line if you're using Swift
@@ -85,16 +85,16 @@ end
 
 target 'TestKerkeePodUITests' do
 end
-~~~
+```
 
 **3、执行导入命令**
 
 使用终端cd 到你的Podfile所在的目录，然后再使用`pod install`就可以把这些开源库导入，CocoaPods就开始为我们做下载源码、配置依赖关系、引入需要的framework等一些列工作。
 
-~~~
+```
 cd $projectPath
 pod install --verbose
-~~~
+```
 
 安装完，这些库都放在一个Pods的工程中，然后会用xcode的workspace来管理这个工程和你自己的工程。以后就打开`yourproject.xcworkspace`就行了。
 

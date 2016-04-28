@@ -7,10 +7,10 @@ name: 运行Example
 
 在根目录添加local.properties文件，配置你的SDK路径
 
-~~~
+```
 sdk.dir=/Users/zihong/android-sdks
 ndk.dir=/Users/zihong/android-ndk
-~~~
+```
 
 把根目录导入到Android Studio中，这时可直接运行example
 

@@ -22,7 +22,7 @@ name: 快速上手（Android）
 
 可以参考例子中的KCRegistMgr类的实现，全局只需注册一次就够了
 
-~~~
+```
 //注册类，所注册的native code中的类的函数必是静态函数，js都能调到
 //第一个参数为js的类名，第二个参数为native的类名
 KCJSBridge.registClass(KCJSObjDefine.kJSObj_testModule, KCApiTestModule.class);
@@ -36,22 +36,22 @@ KCJSBridge.registJSBridgeClient(KCApiJSBridgeClient.class);
 //KCApiJSObjExample中的函数可以是静态函数也可以是成员函数，HybridRuntime会自动处理
 KCJSBridge.registObject(new KCApiJSObjExample());
 
-~~~
+```
 
 - **实现JS对应的Native接口**
 
 静态类如KCApiTestModule中的实现，修改一下方法名即可
 
-~~~
+```
 public static void testInfo(final KCWebView aWebView, KCArgList aArgList)
 {
 }
 
-~~~
+```
 
 KCApiJSObjExample（继承KCJSObject，并实现getJSObjectName()），修改一下方法名即可
 
-~~~
+```
 //成员方法
 public void objExampleNotStaticFunction(final KCWebView aWebView, KCArgList aArgList)
 {
@@ -62,7 +62,7 @@ public static void objExampleStaticFunction(final KCWebView aWebView, KCArgList 
 {
 }
 
-~~~
+```
 
 
 - **创建KCWebView**
@@ -77,7 +77,7 @@ public static void objExampleStaticFunction(final KCWebView aWebView, KCArgList 
 
 - **调用**
 
-~~~
+```
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -99,7 +99,7 @@ public static void objExampleStaticFunction(final KCWebView aWebView, KCArgList 
 //        browser.loadUrl("http://www.baidu.com");
 
     }
-~~~
+```
 
 
 至此，简单Demo即可运行起来
