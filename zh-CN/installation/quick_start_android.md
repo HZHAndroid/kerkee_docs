@@ -20,7 +20,7 @@ name: 快速上手（Android）
 
 - **准备工作**
 
-首先请在build.gradle的defaultConfig中添加`resValue "string", "ker__authority"`, "com.XXX"，请把“com.XXX”更换成你的包名。
+首先请在build.gradle的defaultConfig中添加`resValue "string", "ker__authority", "com.XXX"`，请把“com.XXX”更换成你的包名。
 
 例如：
 
