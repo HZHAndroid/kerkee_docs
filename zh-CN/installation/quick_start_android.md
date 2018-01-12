@@ -18,6 +18,23 @@ name: 快速上手（Android）
 
 以下详情说明一下如何快速上手
 
+- **准备工作**
+
+首先请在build.gradle的defaultConfig中添加`resValue "string", "ker__authority"`, "com.XXX"，请把“com.XXX”更换成你的包名。
+
+例如：
+
+```
+    defaultConfig {
+        minSdkVersion 8
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        resValue "string", "ker__authority", "com.kercer.kerkee_example"
+    }
+```
+
+
 - **注册对应的接口类或模块**
 
 可以参考例子中的KCRegistMgr类的实现，全局只需注册一次就够了
